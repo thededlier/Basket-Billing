@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Basket</string>
+
+    <string name="hi">Hi! Whats your name?</string>
+
+    <string name="apples">Apples(@Rs 42.5)</string>
+    <string name="oranges">Oranges(@Rs 50.5)</string>
+    <string name="banana">Banana(@Rs 60)</string>
+
+    <string name="quantity">Quantity</string>
+    <string name="product">Products</string>
+
+    <string name="bill">Generate Bill</string>
+
+    <string name="total">Total Bill : </string>
+</resources>

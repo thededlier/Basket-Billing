@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rohananand.basket.MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guest"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:id="@+id/tvUserName"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_gravity="left"
+            android:textSize="24sp"
+            android:text="@string/product"/>
+
+        <TextView
+            android:text="@string/quantity"
+            android:layout_gravity="right"
+            android:textSize="24sp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apples"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:id="@+id/chkApples"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:id="@+id/etApplesQuant"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oranges"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:id="@+id/chkOrange"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:enabled="false"
+            android:id="@+id/etOrangesQuant"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/banana"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:id="@+id/chkBanana"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:enabled="false"
+            android:id="@+id/etBananaQuant"/>
+
+    </GridLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bill"
+        android:id="@+id/btnBill"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apples"
+            android:textSize="20sp"
+            android:layout_gravity="left"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="end"
+            android:enabled="false"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:id="@+id/etApplesCost"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oranges"
+            android:textSize="20sp"
+            android:layout_gravity="left"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="end"
+            android:enabled="false"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:id="@+id/etOrangesCost"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/banana"
+            android:textSize="20sp"
+            android:layout_gravity="left"/>
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="end"
+            android:enabled="false"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:id="@+id/etBananaCost"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textSize="24sp"
+            android:layout_gravity="start"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:id="@+id/etTotalBill"
+            android:layout_gravity="end"
+            android:textSize="24sp"
+            android:textAlignment="textEnd"/>
+    </GridLayout>
+
+</LinearLayout>
